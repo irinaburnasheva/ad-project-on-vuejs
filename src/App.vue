@@ -22,9 +22,9 @@
     </v-navigation-drawer>
     <v-card color="grey lighten-4"
             flat
-            height="200px"
             tile>
-    <v-toolbar  dark color="blue">
+
+      <v-toolbar  dark color="blue">
         <v-app-bar-nav-icon
           @click="drawer = !drawer"
           class="hidden-md-and-up"
@@ -47,7 +47,7 @@
           </v-btn>
         </v-toolbar-items>
 
-    </v-toolbar>
+      </v-toolbar>
     </v-card>
 
     <!-- Sizes your content based upon application components -->
@@ -59,21 +59,20 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        drawer: false,
-        links: [
-          {title: 'Login', icon: 'mdi-lock', url: '/login'},
-          {title: 'Registration', icon: 'mdi-face', url: '/registration'},
-          {title: 'Orders', icon: 'mdi-bookmark-outline', url: '/orders'},
-          {title: 'New ad', icon: 'mdi-file-plus', url: '/new'},
-          {title: 'My ads', icon: 'mdi-format-list-bulleted', url: '/list'}
-        ]
-      }
+export default {
+  data () {
+    return {
+      drawer: false,
+      links: [
+        { title: 'Login', icon: 'mdi-lock', url: '/login' },
+        { title: 'Registration', icon: 'mdi-face', url: '/registration' },
+        { title: 'Orders', icon: 'mdi-bookmark-outline', url: '/orders' },
+        { title: 'New ad', icon: 'mdi-file-plus', url: '/new' },
+        { title: 'My ads', icon: 'mdi-format-list-bulleted', url: '/list' }
+      ]
     }
   }
-
+}
 </script>
 
 <style scoped>
